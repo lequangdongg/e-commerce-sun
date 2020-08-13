@@ -1,0 +1,50 @@
+@import "../../scss/variable";
+@import '../../scss/reset';
+.title {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  height: $px60;
+  padding: $px10;
+  background: #222f3f;
+  min-width: 620px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__image{
+  }
+  &__logo {
+    margin: 0 $px16;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__input {
+    display: flex;
+    border: 0;
+    &-btn {
+      margin-left: $px25;
+      background-color: #ffbe61;
+      padding: 0 $px25;
+      border-top-right-radius: $px7;
+      border-bottom-right-radius: $px7;
+    }
+    &-formControl {
+      padding: $px5 $px12;
+      color: #555;
+      background-color: #fff;
+      font-size: $px14;
+      line-height: 1.4;
+      outline: none;
+      width: 115%;
+      border-top-left-radius: $px7;
+    }
+    &-default {
+      background-color: #ffbe61;
+      border: none;
+      padding: $px10;
+      font-weight: 300;
+    }
+  }
+}
